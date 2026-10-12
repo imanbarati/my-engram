@@ -1,0 +1,7 @@
+# OPTIONAL but strongly recommended: encrypt data/ in the repo with git-crypt.
+# 1. Install git-crypt, then run:   git-crypt init
+# 2. Rename this file to .gitattributes (BEFORE adding data) and commit it.
+# 3. Export the key and store it OUTSIDE the repo:   git-crypt export-key ../engram.key
+# 4. Give the key to your trusted person (see access/INSTRUCTIONS_FOR_TRUSTED_PERSON.md).
+data/** filter=git-crypt diff=git-crypt
+data/.gitkeep !filter !diff

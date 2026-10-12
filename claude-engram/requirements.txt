@@ -1,0 +1,6 @@
+# Optional. The core scripts run with Python stdlib only.
+# Uncomment if you want embeddings via Ollama:
+# ollama
+
+# For development / testing only:
+# pytest
